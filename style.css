@@ -1,11 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "norsebold";
-  src: url("font/norse-bold-webfont.woff2") format("woff2"),
-    url("font/norse-bold-webfont.woff") format("woff");
+  src: url("fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("fonts/norse-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-h1 {
-  font-family: "norsebold", sans-serif;
+@font-face {
+  font-family: "playwrite-i";
+  src: url("fonts/playwritegbs-italic-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("fonts/playwritegbs-italic-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playwrite";
+  src: url("fonts/playwritegbs-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/playwritegbs-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.input {
+  @apply block border-[1px] border-[#ccc] rounded-e rounded-s mt-1 mb-8 px-8 py-1;
 }
