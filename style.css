@@ -29,5 +29,5 @@
 }
 
 .input {
-  @apply block border-[1px] border-[#ccc] rounded-e rounded-s mt-1 mb-8 px-8 py-1;
+  @apply block border-[1px] border-[#ccc] rounded-e rounded-s mt-1 mb-8 px-8 py-1 focus:shadow-md focus:outline-none focus:border-blue-500 invalid:border-red-500 invalid:shadow-md;
 }

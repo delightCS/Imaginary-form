@@ -42,15 +42,33 @@
           >
             <div>
               <label for="fname" class="text-[0.7rem]">FIRST NAME</label>
-              <input type="text" name="first_name" id="fname" class="input" />
+              <input
+                type="text"
+                name="first_name"
+                id="fname"
+                class="input"
+                placeholder="Chinenye"
+              />
             </div>
             <div>
               <label for="lname" class="text-[0.7rem]">LAST NAME</label>
-              <input type="text" name="last_name" id="lname" class="input" />
+              <input
+                type="text"
+                name="last_name"
+                id="lname"
+                class="input"
+                placeholder="Delight"
+              />
             </div>
             <div>
               <label for="email" class="text-[0.7rem]">EMAIL</label>
-              <input type="email" name="email" id="email" class="input" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                placeholder="anything@example.com"
+              />
             </div>
             <div>
               <label for="pnumber" class="text-[0.7rem]">PHONE NUMBER</label>
@@ -59,16 +77,23 @@
                 name="phone_number"
                 id="pnumber"
                 class="input"
+                pattern="\d{11}"
+                placeholder="XXXX-XXX-XXXX"
               />
             </div>
-            <div>
+            <div class="relative">
               <label for="password" class="text-[0.7rem]">PASSWORD</label>
               <input
                 type="password"
                 name="password"
                 id="password"
                 class="input"
+                required
               />
+              <span
+                before="*Password do not match"
+                class="before:content-[attr(before)] text-red-500 text-[0.6rem] absolute top-[3.8rem] left-3"
+              ></span>
             </div>
             <div>
               <label for="cpassword" class="text-[0.7rem]"
@@ -79,6 +104,7 @@
                 name="confirm_password"
                 id="cpassword"
                 class="input"
+                required
               />
             </div>
           </div>
